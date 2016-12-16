@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> My very first post: Use Hugo to build a blog &middot; JBroc.tk </title>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.17" />
+
+
+<link rel="stylesheet" href="/css/vec.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="JBroc.tk" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81174920-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  <meta property="og:title" content="My very first post: Use Hugo to build a blog" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:url" content="/posts/use-hugo-for-blogging/" />
+  <meta property="og:image" content="//img/featured/hugo.jpg" />
+
+</head>
+
+<body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=1071432559635664";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<header>
+  <nav>
+    <ul class="nav" id="myTopnav">
+      
+      
+      <li class="pull-left ">
+        <a href="/">/home/jbroc.tk</a>
+      </li>
+      
+      
+      <li class="pull-left current">
+        <a href="/posts">~/posts</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/about">~/about</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/contact">~/contact</a>
+      </li>
+      
+
+      <li class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+      </li>
+      <li class="pull-right"><a href=""><i class="fa fa-rss"></i></a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div class="content">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#why-not-wordpress">Why not Wordpress</a></li>
+<li><a href="#so-what-is-a-static-site-generator">So, what is a static site generator</a></li>
+<li><a href="#the-hugo">The Hugo</a>
+<ul>
+<li>
+<ul>
+<li><a href="#it-runs-anywhere">It runs anywhere</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#flexible">Flexible</a></li>
+</ul></li>
+<li><a href="#and-that-s-enough-reasons-for-me-to-use-hugo">And that&rsquo;s enough reasons for me to use Hugo</a></li>
+</ul></li>
+<li><a href="#how-i-built-it">How I built it</a>
+<ul>
+<li>
+<ul>
+<li><a href="#get-a-free-domains-at-a-href-http-freenom-com-target-blank-freenom-a">Get a free domains at <a href="http://freenom.com" target="_blank">Freenom</a></a></li>
+<li><a href="#deploy-our-site-with-a-href-https-pages-github-com-target-blank-github-io-a">Deploy our site with <a href="https://pages.github.com/" target="_blank">Github IO</a></a></li>
+<li><a href="#change-the-custom-domain-in-github-settings">Change the custom domain in Github settings</a></li>
+<li><a href="#change-the-dns-settings-of-our-domain">Change the DNS settings of our domain</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#summary">Summary</a>
+<ul>
+<li>
+<ul>
+<li><a href="#jbroc-tk-http-jbroc-tk"><a href="http://jbroc.tk">JBroc.tk</a></a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+    <section class="post">
+      <div class="fb-save" data-uri="/posts/use-hugo-for-blogging/" data-size="large"></div>
+      <h1 class="post-title"><a href="/posts/use-hugo-for-blogging/">My very first post: Use Hugo to build a blog</a>
+      </h1>
+      <span class="post-date">Oct 24, 2016 </span>
+      <div class="post-content">
+        
+
+<p><img src="/img/hugo.png" alt="Hugo" /></p>
+
+<p>It&rsquo;s 2 in the morning, and i was still awake to finish my first blog. Not the first, but like the first serious one which i really put my mind to. So, you guys maybe wonder: why did i have to suffered a lot like that, for just a blog?</p>
+
+<h1 id="why-not-wordpress">Why not Wordpress</h1>
+
+<p>Wordpress is kind of easy, but <strong>Wordpress is old</strong>. And it becomes bigger and more complicated every single year. I don&rsquo;t want a giant CMS with an entire database, dealing with tons of logic, just for a single simple blog.
+So it came up when I read an article about the <strong><em>static site generator</em></strong> on SitePoint, which was taken down eventually, and they said that this is the future. I&rsquo;m like &ldquo;What the&hellip; How cool is that!&rdquo; and started to look for it. And it turns out pretty amazing :)</p>
+
+<h1 id="so-what-is-a-static-site-generator">So, what is a static site generator</h1>
+
+<p>Just simple like this: the generator takes the input file (Markdown files, in my case), and turns them into static mark-up, ready-to-render files. After that, we can immediately serve these static files, without the server cares about anything else. And it runs the generator on our computer, not the server.</p>
+
+<p><a href="https://gohugo.io/">Hugo</a> is a static site generator written in Go, and it&rsquo;s so awesome.</p>
+
+<hr />
+
+<h1 id="the-hugo">The Hugo</h1>
+
+<h3 id="it-runs-anywhere">It runs anywhere</h3>
+
+<p>Written in Golang, so yeah, runs on any platform.</p>
+
+<h3 id="performance">Performance</h3>
+
+<p>I think maybe <a href="https://gohugo.io/">Hugo</a> is the <strong>fastest static site generator</strong> in the world. And they think so too. Wordpress looks like nothing compares to this monster :)</p>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/CdiDYZ51a2o" frameborder="0" allowfullscreen></iframe>
+
+<p>With the generated files, the server will response to the requests in lighting fast.</p>
+
+<h3 id="flexible">Flexible</h3>
+
+<p>You can customize the site in anyway you want, and it seems easier (<em>no it&rsquo;s not</em>) cause we don&rsquo;t have to deal with tons of code or plugins or widgets or server-side effect&hellip; It&rsquo;s just fun and simple.</p>
+
+<h2 id="and-that-s-enough-reasons-for-me-to-use-hugo">And that&rsquo;s enough reasons for me to use Hugo</h2>
+
+<hr />
+
+<h1 id="how-i-built-it">How I built it</h1>
+
+<p>Just download the .deb file and install, then you good to go. Now I will show you <strong>how to deploy it on Github pages</strong>, and get a free custom domains.</p>
+
+<h3 id="get-a-free-domains-at-a-href-http-freenom-com-target-blank-freenom-a">Get a free domains at <a href="http://freenom.com" target="_blank">Freenom</a></h3>
+
+<p>Register a domain and then we will configure it later.</p>
+
+<h3 id="deploy-our-site-with-a-href-https-pages-github-com-target-blank-github-io-a">Deploy our site with <a href="https://pages.github.com/" target="_blank">Github IO</a></h3>
+
+<p><img src="/img/githubio.png" alt="My githubio page" />
+Just follow the instruction, so you can have our site visited at something like <code>kiendt07.githubio.com</code>. Don&rsquo;t visit this, cause I already change it to a custom domain. Let&rsquo;s see..</p>
+
+<h3 id="change-the-custom-domain-in-github-settings">Change the custom domain in Github settings</h3>
+
+<p><img src="/img/custom_domain_github.png" alt="Change to custome domain" />
+Go to the Github repo that you contain the site, click Settings, and then type the domain that you just registered on Freenom. Then we move to the final step</p>
+
+<h3 id="change-the-dns-settings-of-our-domain">Change the DNS settings of our domain</h3>
+
+<ul>
+<li>Look in to My Domain after log in to <a href="http://freenom.com">Freenom</a>
+<img src="/img/my-domains.png" alt="My Domains" /></li>
+<li>Click on Manage Domain of your target domain</li>
+<li>Go to Manage Freenom DNS tab</li>
+
+<li><p>Add two <code>A</code> records in <code>TTL</code> and <code>Target</code> column to FreeNom DNS provider and click Save changes</p>
+
+<ul>
+<li><code>3600</code> <code>192.30.252.153</code></li>
+<li><code>3600</code> <code>192.30.252.154</code></li>
+</ul>
+
+<p>like this:
+<img src="/img/dns-records.png" alt="DNS records" /></p>
+
+<p>You may just have to understand that the DNS config from above will redirect every single request to our custom domain, point to out githubio domain.</p></li>
+
+<li><p>Then we&rsquo;re good to go. Wait at most 5 minutes, then navigate to our domain. See the painless magical.</p></li>
+</ul>
+
+<hr />
+
+<h1 id="summary">Summary</h1>
+
+<p>I created my site by using <a href="http://gohugo.io">Hugo</a>, with <code>VEC</code> theme. Feel free to check that out.
+The domain <code>.tk</code> I used was registered on <a href="http://freenom.com">Freenom</a>, and <a href="https://pages.github.com">Github Pages</a> for serving static files.
+So, last but not least, check my site usually guys ;)  hahaha</p>
+
+<h3 id="jbroc-tk-http-jbroc-tk"><a href="http://jbroc.tk">JBroc.tk</a></h3>
+
+      </div>
+    </section>
+
+    <section class="pagination clearfix">
+      
+      
+    </section>
+
+    <section class="post-comments">
+  <h3>Comments</h3>
+
+  
+  
+  
+
+  
+    
+  
+
+  
+    <p>Nothing yet.</p>
+  
+
+  <h3>Say something</h3>
+
+  <form class="post-new-comment" method="POST" action="https://api.staticman.net/v2/entry/kiendt07/jbroc.tk/master/comments">
+  
+    <input type="hidden" name="options[redirect]" value="/posts/use-hugo-for-blogging/#comment-submitted">
+    <input type="hidden" name="options[entryId]" value="0e860a413fabc2b9cc5222b32c44ecd1">
+    <input name="fields[name]" type="text" class="post-comment-field" placeholder="Your name">
+    <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address">
+    <textarea name="fields[body]" class="post-comment-field" placeholder="Your message. Feel free to use Markdown." rows="10"></textarea>
+    <input type="submit" class="post-comment-field btn" value="Submit">
+  </form>
+</section>
+
+<div id="comment-submitted" class="dialog">
+<h3>Thank you</h3>
+  <p>Your comment has been submitted and will be published once it has been approved.</p>
+  <p><a href="https://github.com/eduardoboucas/hugo-plus-staticman/pulls">Click here</a> to see the pull request you generated.</p>
+
+  <p><a href="#" class="btn">OK</a></p>
+</div>
+
+  </div>
+
+  <footer>
+  <div class="footer-info">
+    <p>
+      <a href="mailto:kiendo95@gmail.com?subject="><i class="fa fa-envelope-o"></i> kiendo95@gmail.com </a>
+      {
+        <a href="https://gohugo.io/" title="Hugo :: A fast and modern static website engine">Hugo 0.17</a>,
+        <a href="https://github.com/IvanChou/yii.im" title="vec">Vec</a> 
+      }
+      {<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" title="CC BY-NC-ND 3.0">CC BY-NC-ND 3.0</a>}
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript">
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav";
+    }
+}
+</script>
+
+  <script src="/js/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-81174920-2', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+</body>
+
+</html>

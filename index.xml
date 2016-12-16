@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JBroc.tk</title>
+    <link>/index.xml</link>
+    <description>Recent content on JBroc.tk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Oct 2016 03:12:08 +0700</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My very first post: Use Hugo to build a blog</title>
+      <link>/posts/use-hugo-for-blogging/</link>
+      <pubDate>Mon, 24 Oct 2016 03:12:08 +0700</pubDate>
+      
+      <guid>/posts/use-hugo-for-blogging/</guid>
+      <description>
+
+&lt;p&gt;&lt;img src=&#34;/img/hugo.png&#34; alt=&#34;Hugo&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s 2 in the morning, and i was still awake to finish my first blog. Not the first, but like the first serious one which i really put my mind to. So, you guys maybe wonder: why did i have to suffered a lot like that, for just a blog?&lt;/p&gt;
+
+&lt;h1 id=&#34;why-not-wordpress&#34;&gt;Why not Wordpress&lt;/h1&gt;
+
+&lt;p&gt;Wordpress is kind of easy, but &lt;strong&gt;Wordpress is old&lt;/strong&gt;. And it becomes bigger and more complicated every single year. I don&amp;rsquo;t want a giant CMS with an entire database, dealing with tons of logic, just for a single simple blog.
+So it came up when I read an article about the &lt;strong&gt;&lt;em&gt;static site generator&lt;/em&gt;&lt;/strong&gt; on SitePoint, which was taken down eventually, and they said that this is the future. I&amp;rsquo;m like &amp;ldquo;What the&amp;hellip; How cool is that!&amp;rdquo; and started to look for it. And it turns out pretty amazing :)&lt;/p&gt;
+
+&lt;h1 id=&#34;so-what-is-a-static-site-generator&#34;&gt;So, what is a static site generator&lt;/h1&gt;
+
+&lt;p&gt;Just simple like this: the generator takes the input file (Markdown files, in my case), and turns them into static mark-up, ready-to-render files. After that, we can immediately serve these static files, without the server cares about anything else. And it runs the generator on our computer, not the server.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; is a static site generator written in Go, and it&amp;rsquo;s so awesome.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;the-hugo&#34;&gt;The Hugo&lt;/h1&gt;
+
+&lt;h3 id=&#34;it-runs-anywhere&#34;&gt;It runs anywhere&lt;/h3&gt;
+
+&lt;p&gt;Written in Golang, so yeah, runs on any platform.&lt;/p&gt;
+
+&lt;h3 id=&#34;performance&#34;&gt;Performance&lt;/h3&gt;
+
+&lt;p&gt;I think maybe &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; is the &lt;strong&gt;fastest static site generator&lt;/strong&gt; in the world. And they think so too. Wordpress looks like nothing compares to this monster :)&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/CdiDYZ51a2o&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;With the generated files, the server will response to the requests in lighting fast.&lt;/p&gt;
+
+&lt;h3 id=&#34;flexible&#34;&gt;Flexible&lt;/h3&gt;
+
+&lt;p&gt;You can customize the site in anyway you want, and it seems easier (&lt;em&gt;no it&amp;rsquo;s not&lt;/em&gt;) cause we don&amp;rsquo;t have to deal with tons of code or plugins or widgets or server-side effect&amp;hellip; It&amp;rsquo;s just fun and simple.&lt;/p&gt;
+
+&lt;h2 id=&#34;and-that-s-enough-reasons-for-me-to-use-hugo&#34;&gt;And that&amp;rsquo;s enough reasons for me to use Hugo&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;how-i-built-it&#34;&gt;How I built it&lt;/h1&gt;
+
+&lt;p&gt;Just download the .deb file and install, then you good to go. Now I will show you &lt;strong&gt;how to deploy it on Github pages&lt;/strong&gt;, and get a free custom domains.&lt;/p&gt;
+
+&lt;h3 id=&#34;get-a-free-domains-at-a-href-http-freenom-com-target-blank-freenom-a&#34;&gt;Get a free domains at &lt;a href=&#34;http://freenom.com&#34; target=&#34;_blank&#34;&gt;Freenom&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Register a domain and then we will configure it later.&lt;/p&gt;
+
+&lt;h3 id=&#34;deploy-our-site-with-a-href-https-pages-github-com-target-blank-github-io-a&#34;&gt;Deploy our site with &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34;&gt;Github IO&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/githubio.png&#34; alt=&#34;My githubio page&#34; /&gt;
+Just follow the instruction, so you can have our site visited at something like &lt;code&gt;kiendt07.githubio.com&lt;/code&gt;. Don&amp;rsquo;t visit this, cause I already change it to a custom domain. Let&amp;rsquo;s see..&lt;/p&gt;
+
+&lt;h3 id=&#34;change-the-custom-domain-in-github-settings&#34;&gt;Change the custom domain in Github settings&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/custom_domain_github.png&#34; alt=&#34;Change to custome domain&#34; /&gt;
+Go to the Github repo that you contain the site, click Settings, and then type the domain that you just registered on Freenom. Then we move to the final step&lt;/p&gt;
+
+&lt;h3 id=&#34;change-the-dns-settings-of-our-domain&#34;&gt;Change the DNS settings of our domain&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Look in to My Domain after log in to &lt;a href=&#34;http://freenom.com&#34;&gt;Freenom&lt;/a&gt;
+&lt;img src=&#34;/img/my-domains.png&#34; alt=&#34;My Domains&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Click on Manage Domain of your target domain&lt;/li&gt;
+&lt;li&gt;Go to Manage Freenom DNS tab&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add two &lt;code&gt;A&lt;/code&gt; records in &lt;code&gt;TTL&lt;/code&gt; and &lt;code&gt;Target&lt;/code&gt; column to FreeNom DNS provider and click Save changes&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;3600&lt;/code&gt; &lt;code&gt;192.30.252.153&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;3600&lt;/code&gt; &lt;code&gt;192.30.252.154&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;like this:
+&lt;img src=&#34;/img/dns-records.png&#34; alt=&#34;DNS records&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You may just have to understand that the DNS config from above will redirect every single request to our custom domain, point to out githubio domain.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Then we&amp;rsquo;re good to go. Wait at most 5 minutes, then navigate to our domain. See the painless magical.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;I created my site by using &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, with &lt;code&gt;VEC&lt;/code&gt; theme. Feel free to check that out.
+The domain &lt;code&gt;.tk&lt;/code&gt; I used was registered on &lt;a href=&#34;http://freenom.com&#34;&gt;Freenom&lt;/a&gt;, and &lt;a href=&#34;https://pages.github.com&#34;&gt;Github Pages&lt;/a&gt; for serving static files.
+So, last but not least, check my site usually guys ;)  hahaha&lt;/p&gt;
+
+&lt;h3 id=&#34;jbroc-tk-http-jbroc-tk&#34;&gt;&lt;a href=&#34;http://jbroc.tk&#34;&gt;JBroc.tk&lt;/a&gt;&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>/about/</link>
+      <pubDate>Tue, 13 Sep 2016 11:43:42 +0100</pubDate>
+      
+      <guid>/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h2&gt;
+
+&lt;p&gt;Kien Do, live in Hanoi, originally from a small town in Hung Yen, Viet Nam.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-do-i-do&#34;&gt;What do I do?&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;m a student at Hanoi University of Science and Technology, who is fascinated by technology.
+My goals are becoming a fullstack developer and be able to build something that change the world,
+even just a little.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-can-you-contact-me&#34;&gt;How can you contact me?&lt;/h2&gt;
+
+&lt;p&gt;Send me an email at &lt;strong&gt;&lt;a href=&#34;mailto:kiendo95@gmail.com&#34;&gt;kiendo95@gmail.com&lt;/a&gt;&lt;/strong&gt; or look at my &lt;strong&gt;&lt;a href=&#34;/contact&#34;&gt;contact page&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;what-else&#34;&gt;What else?&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/mu-cang-chai.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Love traveling.&lt;/p&gt;
+
+&lt;p&gt;Running a lot. The near goal is 21K.&lt;/p&gt;
+
+&lt;p&gt;Passionate in football. A fan of Real Madrid.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ping me</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>
+
+&lt;h3 id=&#34;email&#34;&gt;EMAIL&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;mailto:kiendo95@gmail.com&#34;&gt;kiendo95@gmail.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;github&#34;&gt;GITHUB&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/kiendt07/&#34;&gt;https://github.com/kiendt07/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;facebook&#34;&gt;Facebook&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.facebook.com/kiendo.95/&#34;&gt;https://www.facebook.com/kiendo.95/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;instagram&#34;&gt;Instagram&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.instagram.com/kienj__/&#34;&gt;https://www.instagram.com/kienj__/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;ask-fm&#34;&gt;ASK.fm&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ask.fm/kiendo95&#34;&gt;http://ask.fm/kiendo95&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
